@@ -9,8 +9,9 @@ import {
 
 import HeadNav from './Navbar';
 import Footer from './Footer'
+import {Props} from "react-select";
 
-const Basic = (Props:JSX.Element) => (
+const Basic = (props: Props) => (
     <div>
         <Head>
             <style data-merge-styles="true"/>
@@ -34,12 +35,13 @@ const Basic = (Props:JSX.Element) => (
             <meta name="theme-color" content="#ffffff"/>
             <title>Schmoaaaaah</title>
         </Head>
+        <p>test</p>
         <Layout>
             <LayoutHeader>
                 <HeadNav/>
             </LayoutHeader>
             <LayoutContainer>
-				{Props}
+				{props}
             </LayoutContainer>
             <LayoutFooter>
                 <Footer/>
