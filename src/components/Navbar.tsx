@@ -1,23 +1,21 @@
 import {Card, Tab, Tabs} from "@paljs/ui";
 import Home from "pages/home";
 import About from "pages/about";
-import Basic from "components/Basic";
+import Link from 'next/link'
 
 
 const HeadNav = () => (
-    <Card>
+    <Card status="Primary">
         <Tabs>
-            <Tab title="🏠Home">
-                <Basic>
-                    <Home />
-                </Basic>
-            </Tab>
-            <Tab title="✌About">
-                <About/>
-            </Tab>
-            <Tab title="Tab 3">
-                <h1>Content 3</h1>
-            </Tab>
+            <Link href="/" passHref>
+                <Tab title="🏠Home"/>
+            </Link>
+            <Link href="/about" passHref>
+                <Tab title="✌About"/>
+            </Link>
+            <Link href="/programming" passHref>
+                <Tab title="Tab 3"/>
+            </Link>
         </Tabs>
     </Card>
 )

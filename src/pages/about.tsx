@@ -1,10 +1,7 @@
-import Basic from '../components/Basic';
 import Construction from "../components/Construction";
 
 const About = () => (
-	<Basic>
-		<Construction/>
-	</Basic>
+	<Construction/>
 );
 
 export default About;

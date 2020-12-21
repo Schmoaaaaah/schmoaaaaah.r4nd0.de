@@ -11,7 +11,7 @@ import HeadNav from './Navbar';
 import Footer from './Footer'
 import {Props} from "react-select";
 
-const Basic = (props: Props) => (
+const Basic = (/*props: Props*/) => (
     <div>
         <Head>
             <style data-merge-styles="true"/>
@@ -35,19 +35,30 @@ const Basic = (props: Props) => (
             <meta name="theme-color" content="#ffffff"/>
             <title>Schmoaaaaah</title>
         </Head>
-        <p>test</p>
         <Layout>
             <LayoutHeader>
                 <HeadNav/>
             </LayoutHeader>
-            <LayoutContainer>
-				{props}
-            </LayoutContainer>
-            <LayoutFooter>
-                <Footer/>
-            </LayoutFooter>
+
         </Layout>
+
+
+
     </div>
 );
 
 export default Basic;
+/*{props}
+
+<Layout>
+<LayoutHeader>
+<HeadNav/>
+</LayoutHeader>
+<LayoutContainer>
+
+</LayoutContainer>
+<LayoutFooter>
+<Footer/>
+</LayoutFooter>
+</Layout>
+*/
