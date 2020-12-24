@@ -1,72 +1,60 @@
 <template>
-  <v-container fluid class="pt-0">
-    <v-row class="">
-      <HeadNav />
-      <v-col class="mr-auto pa-0">
-        <v-main app class="h-100 pa-10">
-          <div class="d-flex justify-space-around">
-            <v-hover>
-              <template v-slot:default="{ hover }">
-                <v-card
-                  class="mx-auto transition-swing"
-                  :class="`elevation-${hover ? 24 : 6}`"
-                >
-                  <v-img
-                    max-width="300"
-                    src="/pictures/world.gif"
-                    class="rounded-circle ma-3"
-                  >
-                    <template v-slot:placeholder>
-                      <v-row
-                        class="fill-height ma-0"
-                        align="center"
-                        justify="center"
-                      >
-                        <v-progress-circular
-                          indeterminate
-                          color="grey lighten-5"
-                        ></v-progress-circular>
-                      </v-row>
-                    </template>
-                  </v-img>
-                </v-card>
-              </template>
-            </v-hover>
-            <v-hover>
-              <template v-slot:default="{ hover }">
-                <v-card
-                  class="mx-auto transition-swing ma-3"
-                  :class="`elevation-${hover ? 24 : 6}`"
-                >
-                  <v-card-title
-                    >Hey <strong class="haupttitel">!</strong></v-card-title
-                  >
-                  <v-card-text class="text-center">
-                    <p>
-                      It's me
-                      <strong class="haupttitel">Schmoaaaaah</strong> maybe you
-                      also know me as <strong class="haupttitel">Noah</strong>.
-                    </p>
-                    <p>
-                      So you found my website. Nice👌<span id="intelectuelspin"
-                        >👌</span
-                      >.
-                    </p>
-                    <p>
-                      Please take a look at everything there is some
-                      <strong class="haupttitel">Cool</strong
-                      ><span>🕶</span> Stuff around
-                    </p>
-                  </v-card-text>
-                </v-card>
-              </template>
-            </v-hover>
-          </div>
-        </v-main>
-      </v-col>
-    </v-row>
-    <Footer />
-  </v-container>
+  <div class="d-flex justify-space-around festehoehe">
+    <v-hover>
+      <template v-slot:default="{ hover }">
+        <v-card
+          class="mx-auto transition-swing"
+          :class="`elevation-${hover ? 24 : 6}`"
+        >
+          <v-img
+            max-width="300"
+            src="/pictures/world.gif"
+            class="rounded-circle ma-3"
+          >
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+        </v-card>
+      </template>
+    </v-hover>
+    <v-hover>
+      <template v-slot:default="{ hover }">
+        <v-card
+          class="mx-auto transition-swing ma-3"
+          :class="`elevation-${hover ? 24 : 6}`"
+        >
+          <v-card-title
+            >Hey <strong class="haupttitelbig"> !</strong></v-card-title
+          >
+          <v-card-text class="text-center">
+            <p>
+              It's me
+              <strong class="haupttitel">Schmoaaaaah</strong> maybe you also
+              know me as <strong class="haupttitel">Noah</strong>.
+            </p>
+            <p>
+              So you found my website. Nice👌<span id="intelectuelspin">👌</span
+              >.
+            </p>
+            <p>
+              Please take a look at everything there is some
+              <strong class="haupttitel">Cool</strong>
+              <v-btn icon @click="$vuetify.theme.dark = !$vuetify.theme.dark">
+                <v-icon>mdi-sunglasses</v-icon>
+              </v-btn>
+              Stuff around
+            </p>
+          </v-card-text>
+        </v-card>
+      </template>
+    </v-hover>
+  </div>
 </template>
 
 <script>
@@ -199,5 +187,9 @@ span#intelectuelspin:hover {
 
 span#darkmode {
   cursor: pointer;
+}
+
+#festehoehe {
+  height: 100%;
 }
 </style>

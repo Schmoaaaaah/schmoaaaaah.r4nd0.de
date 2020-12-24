@@ -2,10 +2,6 @@
   <Construction />
 </template>
 
-<script>
-export default {
-  name: 'About',
-}
-</script>
+<script></script>
 
 <style scoped></style>
