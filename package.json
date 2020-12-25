@@ -14,7 +14,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
-    "postcss": "^7"
+    "postcss": "^7",
+    "vue-chimera": "^3.0.2"
   },
   "devDependencies": {
     "@nuxt/types": "~2.14.0",

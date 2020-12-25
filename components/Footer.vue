@@ -1,7 +1,7 @@
 <template>
   <v-footer fixed app>
     <v-row align="center" justify="center">
-      <v-card flat class="text-center">
+      <v-card class="text-center">
         <v-card-text>
           created with 🩸, 😓 and 😭 by
           <NuxtLink to="/"

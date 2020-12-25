@@ -25,8 +25,14 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: ['vue-chimera/nuxt'],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  // chimera config
+  chimera: {
+    prefetch: 'override', // Set to false to disable prefetch
+    prefetchTimeout: 4000, // Maximum number in milliseconds to wait on server to prefetch
+  },
 }
