@@ -19,7 +19,7 @@
         </template>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        <Construction />
+        <InstaMain />
       </v-expansion-panel-content>
     </v-expansion-panel>
     <v-expansion-panel>
@@ -72,9 +72,34 @@
 </template>
 
 <script>
-import Construction from '@/components/Construction'
 export default {
-  components: { Construction },
+  async fetch({ app, store }) {
+    if (process.browser) return
+    try {
+      // Binds it on server side then unbind again to avoid memory leaks on the server.
+      await store.dispatch('binduserschmoaaaaah')
+      await store.dispatch('binduserschmeeeeeme')
+      await store.dispatch('bindpostsschmoaaaaah')
+      await store.dispatch('bindpostsschmeeeeeme')
+      await store.dispatch('unbinduserschmoaaaaah')
+      await store.dispatch('unbinduserschmeeeeeme')
+      await store.dispatch('unbindpostsschmoaaaaah')
+      await store.dispatch('unbindpostsschmeeeeeme')
+    } catch (e) {
+      console.error(e)
+    }
+  },
+  /**  Bind Vuexfire on client-side: */
+  async mounted() {
+    try {
+      await this.$store.dispatch('binduserschmoaaaaah')
+      await this.$store.dispatch('binduserschmeeeeeme')
+      await this.$store.dispatch('bindpostsschmoaaaaah')
+      await this.$store.dispatch('bindpostsschmeeeeeme')
+    } catch (e) {
+      console.error(e)
+    }
+  },
 }
 </script>
 
