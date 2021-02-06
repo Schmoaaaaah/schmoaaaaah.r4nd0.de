@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex justify-space-around festehoehe">
     <v-hover>
-      <template v-slot:default="{ hover }">
+      <template #default="{ hover }">
         <v-card
           class="mx-auto transition-swing"
           :class="`elevation-${hover ? 24 : 6}`"
@@ -11,7 +11,7 @@
             src="/pictures/world.gif"
             class="rounded-circle ma-3"
           >
-            <template v-slot:placeholder>
+            <template #placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular
                   indeterminate
@@ -24,7 +24,7 @@
       </template>
     </v-hover>
     <v-hover>
-      <template v-slot:default="{ hover }">
+      <template #default="{ hover }">
         <v-card
           class="mx-auto transition-swing ma-3"
           :class="`elevation-${hover ? 24 : 6}`"

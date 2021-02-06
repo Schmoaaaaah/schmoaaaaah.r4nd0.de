@@ -25,8 +25,35 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: [
+    'vue-chimera/nuxt',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyBlCI1DZDuJ-14cFsGAYOYdQSYG0e5Qc9Q',
+          authDomain: 'personalsite-e797f.firebaseapp.com',
+          databaseURL:
+            'https://personalsite-e797f-default-rtdb.europe-west1.firebasedatabase.app',
+          projectId: 'personalsite-e797f',
+          storageBucket: 'personalsite-e797f.appspot.com',
+          messagingSenderId: '212345716629',
+          appId: '1:212345716629:web:5877e3c68eae4d7c45009c',
+          measurementId: 'G-8444RHLSVT',
+        },
+        services: {
+          firestore: true,
+        },
+      },
+    ],
+  ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  // chimera config
+  chimera: {
+    prefetch: true,
+    prefetchTimeout: 4000,
+  },
 }
