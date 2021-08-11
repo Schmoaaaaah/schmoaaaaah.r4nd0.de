@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/firebase": "^7.6.1",
-    "firebase": "^8.6.7",
+    "firebase": "^8.9.1",
     "nuxt": "^2.14.6",
     "postcss": "^8",
     "vue-chimera": "^3.0.2",
