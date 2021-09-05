@@ -15,4 +15,3 @@
     </v-theme-provider>
   </v-app>
 </template>
-<script></script>
