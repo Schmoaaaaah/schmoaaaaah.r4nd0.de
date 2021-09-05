@@ -85,9 +85,7 @@ export default {
       await store.dispatch('unbinduserschmeeeeeme')
       await store.dispatch('unbindpostsschmoaaaaah')
       await store.dispatch('unbindpostsschmeeeeeme')
-    } catch (e) {
-      console.error(e)
-    }
+    } catch (e) {}
   },
   /**  Bind Vuexfire on client-side: */
   async mounted() {
@@ -96,9 +94,7 @@ export default {
       await this.$store.dispatch('binduserschmeeeeeme')
       await this.$store.dispatch('bindpostsschmoaaaaah')
       await this.$store.dispatch('bindpostsschmeeeeeme')
-    } catch (e) {
-      console.error(e)
-    }
+    } catch (e) {}
   },
 }
 </script>
