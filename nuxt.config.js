@@ -6,6 +6,13 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
+    script: [
+      {
+        src: "https://data.r4nd0.de/umami.js",
+        async: true,
+        'data-website-id': '8cedc6dc-9714-4c43-b55a-7102fb6d590c'
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
