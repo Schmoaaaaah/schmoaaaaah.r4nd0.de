@@ -17,7 +17,7 @@
         "nuxt": "^2.15.8",
         "postcss": "^8",
         "vue-chimera": "^3.0.2",
-        "vuex": "^3.6.2",
+        "vuex": "^4.0.2",
         "vuexfire": "^3.2.5",
         "core-js": "^3.20.2"
     },
@@ -25,7 +25,7 @@
         "@nuxt/types": "~2.15.8",
         "@nuxtjs/eslint-module": "^3.0.2",
         "@nuxtjs/eslint-config": "^7.0.0",
-        "@nuxtjs/vuetify": "^1.11.3",
+        "@nuxtjs/vuetify": "^1.12.3",
         "@vue/test-utils": "^1.2.2",
         "babel-core": "7.0.0-bridge.0",
         "babel-eslint": "^10.1.0",
