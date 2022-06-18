@@ -1,19 +1,23 @@
 module.exports = {
+  extends: [
+    "plugin:vue/recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended",
+    "plugin:prettier/recommended",
+  ],
+
   root: true,
+
   env: {
-    browser: true,
     node: true,
   },
+
   parserOptions: {
-    parser: 'babel-eslint',
+    ecmaVersion: 2020,
   },
-  extends: [
-    '@nuxtjs',
-    'prettier',
-    'plugin:prettier/recommended',
-    'plugin:nuxt/recommended',
-  ],
-  plugins: ['prettier'],
-  // add your custom rules here
-  rules: {},
-}
+
+  rules: {
+    "no-console": "off",
+    "no-debugger": "off",
+  },
+};
